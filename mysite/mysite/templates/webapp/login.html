@@ -47,7 +47,47 @@
         </div>
     </div>
 </div>
+<table border=1>
+  <tr>
+    <th>Number</th>
+    <th>Square</th>
+  </tr>
+  <indent>
+  <% for i in range(10): %>
+    <tr>
+    <td><% print(i %)></td>
+    <td><% print(i**2 %)></td>
+    </tr>
+  </indent>
+</table>
 <div id="dropDownSelect1"></div>
-
+<div class="container">
+<div class="alert alert-primary" role="alert">
+    User: {{user_input}}
+<div class="alert alert-dark" role="alert">
+    Friend: {{bot_response}}
+</div>
+<form  action="/website" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Friend Chatbot
+    <input type="text" name="user_input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Talk to my friend">
+  <button type="submit" class="btn btn-primary">Send
+</button></label></div>
+<table border=1>
+  <tr>
+    <th>Number</th>
+    <th>Square</th>
+  </tr>
+  <indent>
+    <%_ for i in range(10): %>
+    <tr>
+    <td><% print i %></td>
+    <td><% print i**2 %></td>
+    </tr>
+  </indent>>
+</table>
+</form>
+</div>
+</div>
 </body>
 </html>
